@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+  <div id="main">
+    <form id="user-birthday">
+      <li class="elem">
+        <div class="name">DAY</div>
+        <input class="input" placeholder="DD" required></input>
+        <div class="error-state" id="userDay">error</div>
+      </li>
+      <li class="elem">
+        <div class="name">MONTH</div>
+        <input class="input" placeholder="MM" required></input>
+        <div class="error-state" id="userMonth">error</div>
+      </li>
+      <li class="elem">
+        <div class="name">YEAR</div>
+        <input class="input" placeholder="YYYY" required></input>
+        <div class="error-state" id="userYear">error</div>
+      </li>
+    </form>
+
+    <div id="block-button">
+      <hr id="line"></hr>
+      <button id="button-arrow" form="user-birthday" name="send">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44">
+          <g fill="none" stroke="#FFF" stroke-width="2">
+            <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+          </g>
+        </svg>
+      </button>
+    </div>
+
+    <div class="block-result">
+      <span class="number">- -</span><span class="text"> years</span>
+    </div>
+    <div class="block-result">
+      <span class="number">- -</span><span class="text"> months</span>
+    </div>
+    <div class="block-result">
+      <span class="number">- -</span><span class="text"> days</span>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>
